@@ -1,0 +1,9 @@
+@import "@mariozechner/pi-web-ui/app.css";
+
+/* Ensure pi-chat-panel's inner flex containers can shrink and scroll */
+pi-chat-panel > .relative.flex {
+	min-height: 0;
+}
+pi-chat-panel > .relative.flex > .h-full {
+	min-height: 0;
+}
