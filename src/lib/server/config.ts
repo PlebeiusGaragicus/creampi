@@ -13,7 +13,7 @@ function expandHome(p: string): string {
 export const config = {
 	host: env('HOST', '127.0.0.1'),
 	port: Number.parseInt(env('PORT', '5173'), 10),
-	dataDir: expandHome(env('DATA_DIR', './data')),
+	dataDir: expandHome(env('DATA_DIR', '~/.local/share/creampi')),
 	lmStudio: {
 		baseUrl: env('LM_STUDIO_BASE_URL', 'http://bot.local:2345'),
 		defaultModel: env('LM_STUDIO_DEFAULT_MODEL', ''),

@@ -28,7 +28,8 @@ npm run dev
 ```
 creampi/
 ├── src/               Unified SvelteKit app (UI + API routes)
-├── data/              Runtime data (SQLite, uploads) -- gitignored
 ├── package.json
 └── .env.example
 ```
+
+Runtime data (SQLite database, uploads) is stored at `~/.local/share/creampi` by default, outside the repo. Override with `DATA_DIR` in `.env`.
